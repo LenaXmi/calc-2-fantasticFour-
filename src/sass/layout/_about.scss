@@ -107,13 +107,13 @@
         font-weight: 500;
         font-size: 12px;
         line-height: 2.16;
-        vertical-align: top;
+        
         
 
         @media screen and (min-width: 768px) {
             font-size: 10px;
             line-height: 2;
-            width: 401px;
+            // width: 401px;
            
         }
         
@@ -121,7 +121,7 @@
             font-size: 18px;
             line-height: 1.55;
             margin-bottom: 20px;
-            height: 641px;
+            // width: 641px;
             
             
            
@@ -186,7 +186,8 @@
 
     @media screen and (min-width: 1366px) {
         margin-left: 30px;
-        max-width: 641px;
+        max-width: 642px;
+        height: 660px;
         
         
     }
