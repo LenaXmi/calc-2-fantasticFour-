@@ -1,0 +1,112 @@
+.benefits {
+  background-image: linear-gradient(to bottom, #111518 65%, #ffffff 65%, #ffffff 100%);
+
+  &__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 50px;
+      padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1366px) {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    @media screen and (min-width: 768px) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.36;
+    letter-spacing: 0.03em;
+
+    color: #ffffff;
+
+    @media screen and (min-width: 768px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 1360px) {
+      display: none;
+    }
+  }
+
+  &__list {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 15px;
+    counter-reset: number 0;
+    background-color: #ffffff;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 40px;
+      padding-right: 120px;
+      padding-left: 50px;
+      padding-top: 0px;
+
+      margin-left: -20px;
+      margin-top: -40px;
+      transform: translate(10px, 40px);
+    }
+
+    @media screen and(min-width:1360px) {
+      margin-top: 30px;
+      margin-left: 40px;
+      transform: translate(-10px, 0px);
+    }
+  }
+
+  &__item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+
+    letter-spacing: 0.08em;
+
+    color: #111518;
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 2 - 20px);
+      margin-top: 40px;
+      margin-left: 20px;
+
+      @media screen and(min-width:1360px) {
+        flex-basis: calc(100% / 3 - 40px);
+        margin-top: 30px;
+        margin-left: 40px;
+      }
+    }
+
+    &:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &::before {
+      display: block;
+      counter-increment: number 1;
+      content: '— ' counter(number, decimal-leading-zero);
+      margin-bottom: 10px;
+
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.64;
+      letter-spacing: 0.08em;
+
+      color: $accentTextColor;
+    }
+  }
+}
