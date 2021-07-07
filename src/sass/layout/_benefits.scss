@@ -1,5 +1,10 @@
 .benefits {
-  background-image: linear-gradient(to bottom, #111518 50%, #ffffff 50%, $mainBackgroundColor 100%);
+  background-image: linear-gradient(
+    to bottom,
+    $boldTextColor 75%,
+    $mainBackgroundColor 25%,
+    $mainBackgroundColor 100%
+  );
   padding-bottom: 40px;
 
   &__container {
@@ -17,7 +22,7 @@
     line-height: 1.36;
     letter-spacing: 0.03em;
 
-    color: #ffffff;
+    color: $mainBackgroundColor;
 
     @media screen and (max-width: 767px) {
       padding-right: 120px;
@@ -37,7 +42,7 @@
     padding: 20px 15px 20px 30px;
 
     counter-reset: number 0;
-    background-color: #ffffff;
+    background-color: $mainBackgroundColor;
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
     @media screen and (min-width: 768px) {
