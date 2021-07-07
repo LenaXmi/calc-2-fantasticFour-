@@ -3,7 +3,7 @@
    * Elastic
    */
   .hamburger--elastic {
-    .hamburger-inner {
+    .hamburger__inner {
       top: $hamburger-layer-height / 2;
       transition-duration: 0.275s;
       transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -20,7 +20,7 @@
     }
 
     &.is-active {
-      .hamburger-inner {
+      .hamburger__inner {
         $y-offset: $hamburger-layer-spacing + $hamburger-layer-height;
 
         transform: translate3d(0, $y-offset, 0) rotate(135deg);
