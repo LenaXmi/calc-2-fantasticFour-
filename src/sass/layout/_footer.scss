@@ -1,0 +1,88 @@
+.footer-two__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-two {
+  background-color: $boldTextColor;
+  padding: 22px 0;
+}
+
+.footer-one__number {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.23;
+  letter-spacing: 0.08em;
+
+  color: $boldTextColor;
+  padding-right: 15px;
+
+  border-right: 1px solid #b9b9b9;
+  transition: color $animation;
+
+  &:hover,
+  &:focus {
+    color: $accentTextColor;
+  }
+
+  @media screen and (max-width: 768px) {
+    border: none;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 479px) {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+.contact-number {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.logo {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+.logo__icon {
+  color: $accentTextColor;
+}
+
+.footer-one {
+  display: flex;
+  justify-content: space-between;
+  width: 905px;
+  padding: 55px 0;
+
+  @media screen and (max-width: 1360px) {
+    width: auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.footer-one__icon-phone {
+  color: $accentTextColor;
+  margin-right: 15px;
+  @media screen and (max-width: 460px) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.footer-one__icon-inst {
+  margin-left: 24px;
+  background-image: url(../images/instagram.svg);
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
