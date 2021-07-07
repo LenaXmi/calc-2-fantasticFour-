@@ -3,37 +3,22 @@
   font-family: inherit;
 
   &__container {
-    width: 100%;
     padding: 30px 20px;
-
-    margin: 0 auto;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.21;
-
     text-transform: uppercase;
 
-    @media screen and (min-width: 480px) {
-      width: 480px;
-    }
-
     @media screen and (min-width: 768px) {
-      width: 768px;
-    }
-
-    @media screen and (min-width: 1366px) {
-      width: 1366px;
-      padding: 12px 20px;
+      padding: 40px;
     }
   }
 
   &__btn {
-    padding: 26px 24px;
+    padding: 15px 5px;
+    margin-left: auto;
 
     font-weight: bold;
     font-size: 14px;
@@ -46,21 +31,16 @@
     color: $accentTextColor;
     background-color: transparent;
     border: 2px solid $accentTextColor;
+    transition: color $animation, background-color $animation, border-color $animation;
 
     @media screen and (max-width: 767px) {
       display: none;
     }
 
-    @media screen and (max-width: 1365px) {
-      margin-left: auto;
-      padding: 15px 5px;
-      min-width: 260px;
-      height: 48px;
-    }
-
     @media screen and (min-width: 1366px) {
       min-width: 336px;
       height: 70px;
+      padding: 26px 24px;
     }
 
     &:focus,
@@ -73,8 +53,38 @@
 }
 
 .logo {
-  &__link {
-    display: block;
+  transition: transform $animation, opacity $animation;
+  &__top {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+    color: $boldTextColor;
+  }
+
+  &__icon {
+    width: 22px;
+    height: 30px;
+    color: $accentTextColor;
+  }
+
+  &__bottom {
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 1.25;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: $boldTextColor;
+
+    &--accent {
+      color: $accentTextColor;
+    }
+  }
+  &:hover,
+  &:focus {
+    transform: translatex(4%) translateY(-4%);
+
+    opacity: 0.9;
   }
 }
 
@@ -90,7 +100,7 @@
   }
 
   &__item:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 45px;
   }
 
   &__item:last-child {
@@ -103,10 +113,13 @@
     font-size: 14px;
     line-height: 1.23;
     text-transform: uppercase;
+    transition: color $animation;
 
     &:hover,
     &:focus {
       color: $accentTextColor;
+      text-decoration: underline;
+      outline: none;
     }
   }
 
@@ -115,12 +128,7 @@
   }
 }
 
-.burger {
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  line-height: 0;
-
+.hamburger {
   @media screen and (min-width: 768px) and (max-width: 1365px) {
     margin-left: 40px;
   }
@@ -130,12 +138,14 @@
   }
 }
 
+//  MOBILE MENU
+
 .mob-menu {
   position: fixed;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   overflow: auto;
   background: rgba(17, 21, 24, 0.9);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -143,8 +153,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity $animation, transform $animation, visibility $animation;
 
   &__container {
     position: relative;
@@ -155,41 +164,20 @@
     @media screen and (min-width: 480px) {
       max-width: 480px;
     }
+    @media screen and (min-width: 768px) {
+      width: 332px;
+    }
   }
 
-  &__logo-item:hover,
-  &__logo-item:focus {
-    color: $accentTextColor;
-  }
-
-  &__logo-link {
-    display: block;
-    width: 80px;
-    height: 30px;
-    background-color: #ffffff;
-    margin-bottom: 50px;
-  }
-
-  &__logo-icon {
-    width: 80px;
-    height: 30px;
-  }
-
-  &__btn-close {
-    position: absolute;
-    top: 36px;
-    right: 20px;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-  }
-
-  &__btn-close-icon {
-    color: white;
+  .mob-logo {
+    color: $mainBackgroundColor;
   }
 
   &__list {
     margin-bottom: 50px;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
 
   &__link {
@@ -198,16 +186,18 @@
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
-    line-height: 180%;
+    line-height: 1.8;
 
     letter-spacing: 0.03em;
 
     color: #ffffff;
+    transition: color $animation;
   }
 
   &__link:focus,
   &__link:hover {
     color: $accentTextColor;
+    text-decoration: underline;
   }
 
   &__btn-consultation {
@@ -224,14 +214,22 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
 
+    cursor: pointer;
     color: $accentTextColor;
     background-color: transparent;
     border: 2px solid $accentTextColor;
-  }
-}
+    transition: color $animation, background-color $animation;
 
-.accent {
-  color: $accentTextColor;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__btn-consultation:hover,
+  &__btn-consultation:focus {
+    color: $mainBackgroundColor;
+    background-color: $accentTextColor;
+  }
 }
 
 .is-open {
@@ -239,4 +237,8 @@
   visibility: visible;
   pointer-events: auto;
   transform: translateY(0);
+
+  @media screen and (min-width: 1366px) {
+    display: none;
+  }
 }
