@@ -7,13 +7,6 @@
   );
   padding-bottom: 40px;
 
-  &__container {
-    @media screen and (min-width: 768px) {
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-  }
-
   &__title {
     margin-bottom: 30px;
 
