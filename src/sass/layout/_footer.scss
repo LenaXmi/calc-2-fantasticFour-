@@ -2,9 +2,6 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 2;
-  /* or 200% */
-
-  color: #b9b9b9;
 }
 
 .footer-two {
@@ -24,10 +21,10 @@
   padding-right: 15px;
 
   border-right: 1px solid #b9b9b9;
+  transition: color $animation;
 
   &:hover,
   &:focus {
-    transition: color $animation;
     color: $accentTextColor;
   }
 
@@ -36,7 +33,7 @@
     margin-bottom: 30px;
   }
 
-  @media screen and (max-width: 460px) {
+  @media screen and (max-width: 479px) {
     font-size: 14px;
     line-height: 1.21;
   }
@@ -58,6 +55,7 @@
 .logo__icon {
   color: $accentTextColor;
 }
+
 .footer-one {
   display: flex;
   justify-content: space-between;
