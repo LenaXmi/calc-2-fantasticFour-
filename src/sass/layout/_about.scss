@@ -63,6 +63,10 @@
         }
     }
     
+    &__list {
+        margin-bottom: 60px;
+    }
+    
     
     &__item {
         font-weight: 600;
@@ -108,9 +112,6 @@
     }
 }
 
-    &__list {
-        margin-bottom: 60px;
-    }
 
     &__text {
         font-weight: 500;
@@ -180,11 +181,6 @@
         text-decoration-line: underline;
         color: $accentTextColor;
         margin-top: 10px;
-        padding-bottom: 130px;
-
-    @media screen and (min-width: 768px) {
-            
-        }
 
 
     @media screen and (min-width: 1366px) {
@@ -229,14 +225,14 @@
 }
 
 .section {
- 
+    margin-bottom: 50px;
     @media screen and (min-width: 768px) {
         display: flex;
         
     }
 
     @media screen and (min-width: 1366px) {
-        
+        margin-bottom: 130px;
     }
 }
 
