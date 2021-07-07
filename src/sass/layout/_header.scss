@@ -82,7 +82,8 @@
   }
   &:hover,
   &:focus {
-    transform: translatex(4%);
+    transform: translatex(4%) translateY(-4%);
+
     opacity: 0.9;
   }
 }
