@@ -2,16 +2,15 @@
   background-image: linear-gradient(
     to bottom,
     $boldTextColor 75%,
-    $mainBackgroundColor 25%,
+    $mainBackgroundColor 75%,
     $mainBackgroundColor 100%
   );
-  @media screen and (min-width: 768px) {
-    padding-bottom: 39px;
-  }
-  @media screen and (min-width: 1366px) {
-    padding-bottom: 130px;
-  }
+
   padding-bottom: 39px;
+
+  @media screen and (min-width: 1366px) {
+    padding-bottom: 125px;
+  }
 
   &__title {
     margin-bottom: 30px;
