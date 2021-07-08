@@ -67,12 +67,16 @@
   }
 
   &__icon {
+    transform: translateY(4px);
+    margin-right: 3px;
+    margin-left: 2px;
     width: 22px;
     height: 30px;
     color: $accentTextColor;
   }
 
   &__bottom {
+    padding-left: 1px;
     font-weight: 700;
     font-size: 8px;
     line-height: 1.25;
@@ -122,7 +126,6 @@
     &:hover,
     &:focus {
       color: $accentTextColor;
-      text-decoration: underline;
       outline: none;
     }
   }
@@ -204,7 +207,6 @@
   &__link:focus,
   &__link:hover {
     color: $accentTextColor;
-    text-decoration: underline;
   }
 
   &__btn-consultation {
