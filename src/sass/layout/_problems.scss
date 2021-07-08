@@ -1,3 +1,15 @@
+// .container {
+// }
+.fire {
+  @media screen and(min-width:1366px) {
+    background-image: url(../images/fire_desctop.svg);
+    background-size: 390px 585px;
+    background-position: right bottom;
+    max-width: 1691px;
+
+    background-repeat: no-repeat;
+  }
+}
 .problems {
   background-image: linear-gradient(
     to bottom,
@@ -5,18 +17,7 @@
     $mainBackgroundColor 25%,
     $mainBackgroundColor 100%
   );
-  @media screen and(min-width:1366px) {
-    background-image: url(../images/fire.svg),
-      linear-gradient(
-        to bottom,
-        $boldTextColor 75%,
-        $mainBackgroundColor 25%,
-        $mainBackgroundColor 100%
-      );
-    background-size: 18%, cover;
-    background-position: 100% 40%;
-    background-repeat: no-repeat;
-  }
+
   &__title {
     @media screen and(max-width:767px) {
       width: 280px;
