@@ -1,16 +1,5 @@
-// .container {
-// }
-.fire {
-  @media screen and(min-width:1366px) {
-    background-image: url(../images/fire_desctop.svg);
-    background-size: 390px 585px;
-    background-position: right bottom;
-    max-width: 1691px;
-
-    background-repeat: no-repeat;
-  }
-}
 .problems {
+  background-color: $boldTextColor;
   background-image: linear-gradient(
     to bottom,
     $boldTextColor 75%,
@@ -40,6 +29,7 @@
   }
 
   &__container {
+    max-width: 1314px;
     background-color: $mainBackgroundColor;
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   }
