@@ -1,11 +1,31 @@
 .problems {
-  background-color: $boldTextColor;
-  background-image: linear-gradient(
-    to bottom,
-    $boldTextColor 75%,
-    $mainBackgroundColor 25%,
-    $mainBackgroundColor 100%
-  );
+  // background-color: $boldTextColor;
+  // background-image: linear-gradient(
+  //   to bottom,
+  //   $boldTextColor 75%,
+  //   $mainBackgroundColor 25%,
+  //   $mainBackgroundColor 100%
+  // );
+  @media screen and(min-width:1366px) {
+    background-image: linear-gradient(
+        to bottom,
+        transparent 75%,
+        $mainBackgroundColor 75%,
+        $mainBackgroundColor 100%
+      ),
+      url(/images/fire_desctop.svg),
+      linear-gradient(to bottom, $boldTextColor 75%, transparent 75%, transparent 100%);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain 390px 585px contain;
+  }
+
+  // background-image: linear-gradient(
+  //   to bottom,
+  //   $boldTextColor 75%,
+  //   transparent 75%,
+  //   transparent 100%
+  // );
 
   &__title {
     @media screen and(max-width:767px) {
@@ -15,6 +35,13 @@
     @media screen and(min-width:768px) {
       width: 568px;
       height: 104px;
+    }
+    @media screen and(min-width:1366px) {
+      width: 866px;
+      height: 178px;
+      padding-top: 100px;
+      padding-bottom: 282px;
+      font-size: 46px;
     }
 
     display: block;
