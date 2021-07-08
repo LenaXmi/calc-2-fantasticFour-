@@ -13,8 +13,9 @@
   display: flex;
   align-items: center;
   font-weight: 600;
-  font-size: 30px;
-  line-height: 1.23;
+
+  font-size: 14px;
+  line-height: 1.21;
   letter-spacing: 0.08em;
 
   color: $boldTextColor;
@@ -32,10 +33,14 @@
     border: none;
     margin-bottom: 30px;
   }
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 
-  @media screen and (max-width: 479px) {
-    font-size: 14px;
-    line-height: 1.21;
+  @media screen and (min-width: 1366px) {
+    font-size: 30px;
+    line-height: 1.23;
   }
 }
 
@@ -71,9 +76,16 @@
 
 .footer-one__icon-phone {
   color: $accentTextColor;
-  @media screen and (max-width: 460px) {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
+  @media screen and (min-width: 1366px) {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -82,4 +94,7 @@
   display: inline-block;
   width: 40px;
   height: 40px;
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+  }
 }
