@@ -97,8 +97,12 @@
   }
 
   &__btn {
+    @media screen and (min-width: 300px) {
+      min-width: 260px;
+    }
+
     display: block;
-    min-width: 260px;
+    min-width: 100%;
     min-height: 48px;
     padding: 14px 2px;
     margin-left: auto;
