@@ -5,13 +5,13 @@
     $mainBackgroundColor 25%,
     $mainBackgroundColor 100%
   );
-  // @media screen and (min-width: 768px) {
-  //   padding-bottom: 39px;
-  // }
-  // @media screen and (min-width: 1366px) {
-  //   padding-bottom: 130px;
-  // }
-  // padding-bottom: 39px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 39px;
+  }
+  @media screen and (min-width: 1366px) {
+    padding-bottom: 130px;
+  }
+  padding-bottom: 39px;
 
   &__title {
     margin-bottom: 30px;

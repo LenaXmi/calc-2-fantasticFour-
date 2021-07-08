@@ -141,6 +141,13 @@
   cursor: pointer;
   border: none;
 
+  transition: color $animation, background-color $animation;
+  &:hover,
+  &:focus {
+    color: $accentTextColor;
+    background-color: $mainBackgroundColor;
+  }
+
   @media screen and (max-width: 1365px) {
     width: 260px;
     padding: 14px 0;
