@@ -20,7 +20,7 @@
   }
 
   &__container {
-    min-height: 538px;
+    min-height: 520px;
     background-image: url(../images/hero/hero-mobile.png);
     background-repeat: no-repeat;
     background-position: right 50% bottom 85px;
@@ -196,6 +196,7 @@
   .hero__container {
     background-image: url('../images/hero/hero-mobile@2x.png');
     background-position: right 50% bottom 85px;
+    min-height: 520px;
     background-size: 208px 178px;
     padding-bottom: 0;
   }
