@@ -102,11 +102,10 @@
   }
 
   &__btn {
-    
     @media screen and (min-width: 300px) {
       min-width: 260px;
     }
-    
+
     display: block;
     text-align: center;
     width: 260px;
