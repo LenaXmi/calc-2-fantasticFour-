@@ -1,4 +1,9 @@
 .reviews {
+  padding-bottom: 50px;
+
+  @media screen and(min-width:1366px) {
+    padding-bottom: 130px;
+  }
   &__container {
     padding: 50px 40px;
     // border: 1px solid red;

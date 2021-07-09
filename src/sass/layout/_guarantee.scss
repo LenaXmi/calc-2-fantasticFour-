@@ -35,6 +35,7 @@
   }
 
   &__item {
+    display: flex;
     @media screen and (min-width: 768px) {
       padding-left: 25px;
     }
@@ -59,11 +60,11 @@
       transform: translateX(-218%);
     }
     @media screen and (min-width: 1366px) {
-      transform: translateX(-190%);
+      transform: translateX(-187%);
       width: 22px;
       height: 30px;
     }
-
+    position: absolute;
     display: inline-block;
     margin: 0;
     width: 15px;
