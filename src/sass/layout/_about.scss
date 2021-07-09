@@ -1,98 +1,121 @@
 .about {
-  &__title {
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 130%;
-    letter-spacing: 0.03em;
-    color: $boldTextColor;
-    margin-bottom: 20px;
 
-    @media screen and (min-width: 768px) {
-      margin-bottom: 30px;
-    }
+    padding-bottom: 50px;
 
     @media screen and (min-width: 1366px) {
-      font-size: 46px;
-      margin-bottom: 50px;
+        padding-bottom: 130px;
+        
     }
-  }
-  &__subtitle {
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.08em;
-    color: $boldTextColor;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    letter-spacing: 0.08em;
+    &__title{
+    
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        color: $boldTextColor;
+        margin-bottom: 20px;
 
-    @media screen and (min-width: 1366px) {
-      font-size: 30px;
-      line-height: 1.23;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width: 1366px) {
+            font-size: 46px;
+            margin-bottom: 50px;
+
+        }
     }
+    &__subtitle {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.08em;
+        color: $boldTextColor;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        letter-spacing: 0.08em;
+    
 
-    &::after {
-      content: '';
-      border: 1px solid #b9b9b9;
-      display: block;
-      margin-top: 10px;
+        @media screen and (min-width: 1366px) {
+        font-size: 30px;
+        line-height: 1.23;
+        }
 
-      @media screen and (min-width: 768px) {
+        &::after {
+            content: "";
+            border: 1px solid #B9B9B9;
+            display: block;
+            margin-top: 10px;
+            
+
+        @media screen and (min-width: 768px) {
+            align-items: center;
+            
+            
+        }
+
+        @media screen and (min-width: 1366px) {
+            margin-top: 15px;
+        }
+    }
+        
+
+        @media screen and (min-width: 1366px) {
+        font-size: 30px;
+        line-height: 1.23;
+        
+        }
+    }
+    
+    &__list {
+        margin-bottom: 60px;
+    }
+    
+    
+    &__item {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 0.06em;
+        color: $boldTextColor;
+        display: flex;
+        
         align-items: center;
+        margin-bottom: 22px;
+
+
+        @media screen and (min-width: 768px) {
+        font-size: 12px;
+        
+        line-height: 1.25;
+        margin-bottom: 35px;
+        
+        }
+
+        @media screen and (min-width: 1366px) {
+        font-size: 16px;
+        margin-bottom: 32px;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            width: 17.08px;
+            height: 14px;
+            margin-right: 8.92px;
+            padding-left: 15px;
+            background-image: url("../images/check.svg");
+            background-repeat: no-repeat;
+            
+
+            @media screen and (min-width: 1366px) {
+            width: 24.41px;
+            height: 20px;
+            margin-right: 34.59px;
+        }
+    }
       }
 
-      @media screen and (min-width: 1366px) {
-        margin-top: 15px;
-      }
-    }
-
-    @media screen and (min-width: 1366px) {
-      font-size: 30px;
-      line-height: 1.23;
-    }
-  }
-
-  &__list {
-    margin-bottom: 60px;
-  }
-
-  &__item {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-    letter-spacing: 0.06em;
-    color: $boldTextColor;
-    display: flex;
-
-    align-items: center;
-    margin-bottom: 22px;
-
-    @media screen and (min-width: 768px) {
-      font-size: 12px;
-
-      line-height: 1.25;
-      margin-bottom: 35px;
-    }
-
-    @media screen and (min-width: 1366px) {
-      font-size: 16px;
-      margin-bottom: 32px;
-    }
-
-    &::before {
-      content: '';
-      display: block;
-      width: 17.08px;
-      height: 14px;
-      margin-right: 8.92px;
-      padding-left: 15px;
-      background-image: url('../images/check.svg');
-
-      @media screen and (min-width: 1366px) {
-        margin-right: 34.59px;
-      }
-    }
-  }
 
   &__text {
     font-weight: 500;
@@ -135,6 +158,9 @@
 
     margin-bottom: 20px;
 
+
+.section {
+
     @media screen and (min-width: 768px) {
       margin-top: 25px;
       margin-bottom: 8px;
@@ -158,6 +184,9 @@
       font-size: 18px;
       line-height: 1.55;
     }
+
+}
+
   }
 
   &__img {
@@ -191,3 +220,4 @@
     margin-bottom: 130px;
   }
 }
+

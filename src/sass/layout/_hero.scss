@@ -102,11 +102,16 @@
   }
 
   &__btn {
+    
+    @media screen and (min-width: 300px) {
+      min-width: 260px;
+    }
+    
     display: block;
     text-align: center;
     width: 260px;
     min-height: 48px;
-    padding: 14px 2px;
+
     margin-left: auto;
     margin-right: auto;
     margin-top: 52px;
@@ -122,11 +127,15 @@
     background-color: $accentTextColor;
     border: 2px solid $accentTextColor;
 
-    transition: color 255ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 255ms cubic-bezier(0.4, 0, 0.2, 1),
+      backgroun-color 255ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:focus,
-    &hover {
-      color: $accentTextColor;
+    &:hover {
+      .hero__btn-link {
+        color: $accentTextColor;
+      }
+
       background-color: white;
     }
 
@@ -143,6 +152,11 @@
 
       letter-spacing: 0.14em;
     }
+  }
+  &__btn-link {
+    color: $mainBackgroundColor;
+    padding: 14px 2px;
+    transition: color $animation;
   }
 }
 
