@@ -1,18 +1,32 @@
 .header {
   background-color: $mainBackgroundColor;
   font-family: inherit;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 20px;
 
     position: relative;
 
-    padding-top: 35px;
+    @media screen and(min-width:480px) {
+      width: 480px;
+    }
 
-    @media screen and (min-width: 768px) {
-      padding-top: 40px;
+    @media screen and(min-width:768px) {
+      width: 768px;
+      padding: 20px 40px;
+    }
+
+    @media screen and(min-width:1366px) {
+      width: 1366px;
     }
   }
 
@@ -136,7 +150,6 @@
 }
 
 .hamburger {
-  position: fixed;
   top: 37px;
   right: 22px;
   @media screen and (min-width: 768px) and (max-width: 1365px) {
