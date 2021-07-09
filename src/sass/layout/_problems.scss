@@ -1,52 +1,50 @@
 .problems {
-  // background-color: $boldTextColor;
-  // background-image: linear-gradient(
-  //   to bottom,
-  //   $boldTextColor 75%,
-  //   $mainBackgroundColor 25%,
-  //   $mainBackgroundColor 100%
-  // );
+  background-image: linear-gradient(
+    to bottom,
+    $boldTextColor 70%,
+    $mainBackgroundColor 70%,
+    $mainBackgroundColor 100%
+  );
+  padding-bottom: 50px;
+  @media screen and(max-width:767px) {
+    padding-top: 25px;
+  }
+  @media screen and(min-width:768px) {
+    padding-top: 60px;
+  }
   @media screen and(min-width:1366px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
     background-image: linear-gradient(
         to bottom,
-        transparent 75%,
-        $mainBackgroundColor 75%,
+        transparent 70%,
+        $mainBackgroundColor 70%,
         $mainBackgroundColor 100%
       ),
       url(/images/fire_desctop.svg),
       linear-gradient(to bottom, $boldTextColor 75%, transparent 75%, transparent 100%);
     background-repeat: no-repeat;
     background-position: right bottom;
-    background-size: contain 390px 585px contain;
+    background-size: contain;
   }
-
-  // background-image: linear-gradient(
-  //   to bottom,
-  //   $boldTextColor 75%,
-  //   transparent 75%,
-  //   transparent 100%
-  // );
 
   &__title {
     @media screen and(max-width:767px) {
       width: 280px;
-      height: 155px;
     }
     @media screen and(min-width:768px) {
       width: 568px;
-      height: 104px;
     }
     @media screen and(min-width:1366px) {
       width: 866px;
-      height: 178px;
-      padding-top: 100px;
-      padding-bottom: 282px;
+
+      margin-bottom: 70px;
       font-size: 46px;
     }
 
     display: block;
-    padding-top: 27px;
-    padding-bottom: 20px;
+
+    padding-bottom: 25px;
     color: $mainBackgroundColor;
     font-weight: 800;
     font-size: 24px;
@@ -64,7 +62,7 @@
     counter-reset: number;
     list-style: decimal-leading-zero;
     @media screen and(max-width:767px) {
-      padding: 30px 20px;
+      padding: 20px 30px;
     }
     @media screen and(min-width:768px) {
       display: grid;
@@ -75,9 +73,9 @@
     }
     @media screen and(min-width:1366px) {
       padding: 70px 80px;
-      grid-column-gap: 40px;
+      grid-column-gap: 80px;
       grid-row-gap: 30px;
-      grid-template-columns: 355px 355px 355px;
+      grid-template-columns: 255px 355px 355px;
     }
   }
 
