@@ -42,9 +42,11 @@
     letter-spacing: 0.08em;
     color: $boldTextColor;
     margin-bottom: 20px;
-    margin-top: 20px;
-    letter-spacing: 0.08em;
 
+    letter-spacing: 0.08em;
+    @media screen and(max-width:767px) {
+      margin-top: 20px;
+    }
     @media screen and (min-width: 1366px) {
       font-size: 30px;
       line-height: 1.23;

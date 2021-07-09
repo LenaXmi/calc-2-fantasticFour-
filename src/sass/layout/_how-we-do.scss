@@ -18,8 +18,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 20px;
+
+    margin-bottom: 20px;
   }
 }
 
@@ -33,6 +33,7 @@
   &__item {
     width: 280px;
     height: 280px;
+    padding: 40px 30px 55px 30px;
     border: 1px;
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
     background: $mainBackgroundColor;
@@ -96,8 +97,8 @@
     letter-spacing: 0.08em;
     color: $mainTextColor;
 
-    margin-left: 11px;
-    margin-right: 11px;
+    padding-left: 11px;
+    padding-right: 11px;
   }
 
   &__icon {
