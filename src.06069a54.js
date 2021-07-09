@@ -7,4 +7,4 @@ $("a.scrollto").click(function(){var t=$(this).attr("href"),o=$(t).offset().top;
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/mobile-menu"),require("./js/anchor");
 },{"./sass/main.scss":"clu1","./js/mobile-menu":"sByI","./js/anchor":"v66i"}]},{},["Focm"], null)
-//# sourceMappingURL=/calc-2-fantasticFour-/src.82aeb496.js.map
+//# sourceMappingURL=/calc-2-fantasticFour-/src.06069a54.js.map
