@@ -2,8 +2,9 @@
 @import './base/common';
 
 // UTILS
+@import './utils/colors';
 @import './utils/variables';
-@import './utils/placecholders';
+@import './utils/placeholders';
 
 // BURGER
 @import './hamburgers/hamburgers.scss';
@@ -21,3 +22,4 @@
 @import './layout/reviews';
 @import './layout/contacts';
 @import './layout/footer';
+@import './layout/modal';

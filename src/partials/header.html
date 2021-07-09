@@ -1,60 +1,70 @@
 <!-- header -->
 <header class="header">
-    <div class="header__container">
+  <div class="header__container">
+    <a class="logo" href="./index.html">
+      <p class="logo__top">
+        Hell<svg class="logo__icon">
+          <use href="./images/icons.svg#campfire"></use></svg
+        >EN
+      </p>
+      <p class="logo__bottom"><span class="logo__bottom--accent">hellish </span>english</p>
+    </a>
 
-        <a class="logo" href="./index.html">
-            <p class="logo__top">
-                Hell<svg class="logo__icon">
-                    <use href="./images/icons.svg#campfire"></use>
-                </svg>EN
-            </p>
-            <p class="logo__bottom"><span class="logo__bottom--accent">hellish </span>english</p>
-        </a>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item scrollto">
+          <a href="#program" class="nav__link">studying program</a>
+        </li>
+        <li class="nav__item scrollto"><a href="#about" class="nav__link">about</a></li>
+        <li class="nav__item scrollto">
+          <a href="#how-we-do" class="nav__link">training options</a>
+        </li>
+        <li class="nav__item scrollto"><a href="#contacts" class="nav__link">contacts</a></li>
+      </ul>
+    </nav>
 
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item scrollto"><a href="#program" class="nav__link">studying program</a></li>
-                <li class="nav__item scrollto"><a href="#about" class="nav__link">about</a></li>
-                <li class="nav__item scrollto"><a href="#how-we-do" class="nav__link">training options</a></li>
-                <li class="nav__item scrollto"><a href="#contacts" class="nav__link">contacts</a></li>
-            </ul>
-        </nav>
+    <button type="button" class="header__btn" data-modal-open>consultation by phone</button>
 
-        <button type="button" class="header__btn">consultation by phone</button>
+    <button class="hamburger hamburger--elastic" data-menu-button type="button">
+      <span class="hamburger__box">
+        <span class="hamburger__inner"></span>
+      </span>
+    </button>
+  </div>
 
-        <button class="hamburger hamburger--elastic " data-menu-button type="button">
-            <span class="hamburger__box">
-                <span class="hamburger__inner"></span>
-            </span>
-        </button>
+  <!-- ======MOBILE MENU====== -->
+
+  <div class="mob-menu" data-menu>
+    <div class="container header__container">
+      <a class="logo" href="./index.html">
+        <p class="logo__top mob-logo">
+          Hell<svg class="logo__icon">
+            <use href="./images/icons.svg#campfire"></use></svg
+          >EN
+        </p>
+        <p class="logo__bottom mob-logo">
+          <span class="logo__bottom--accent">hellish </span>english
+        </p>
+      </a>
     </div>
 
-    <!-- ======MOBILE MENU====== -->
+    <div class="mob-menu__container">
+      <ul class="mob-menu__list" data-menu-close>
+        <li class="mob-menu__item scrollto">
+          <a href="#program" data-menu-close class="mob-menu__link">Studying program</a>
+        </li>
+        <li class="mob-menu__item scrollto">
+          <a href="#about" data-menu-close class="mob-menu__link">About</a>
+        </li>
+        <li class="mob-menu__item scrollto">
+          <a href="#how-we-do" data-menu-close class="mob-menu__link">Training options</a>
+        </li>
+        <li class="mob-menu__item scrollto">
+          <a href="#contacts" data-menu-close class="mob-menu__link">Contacts</a>
+        </li>
+      </ul>
 
-    <div class="mob-menu" data-menu>
-       
-        <div class="container header__container">
-            <a class="logo" href="./index.html">
-                <p class="logo__top mob-logo">
-                    Hell<svg class="logo__icon">
-                        <use href="./images/icons.svg#campfire"></use>
-                    </svg>EN
-                </p>
-                <p class="logo__bottom mob-logo"><span class="logo__bottom--accent">hellish </span>english</p>
-            </a>
-        </div>
-
-        <div class="mob-menu__container">
-
-
-            <ul class="mob-menu__list" data-menu-close>
-                <li class="mob-menu__item scrollto"><a href="#program" data-menu-close class="mob-menu__link">Studying program</a></li>
-                <li class="mob-menu__item scrollto"><a href="#about" data-menu-close class="mob-menu__link">About</a></li>
-                <li class="mob-menu__item scrollto"><a href="#how-we-do" data-menu-close class="mob-menu__link">Training options</a></li>
-                <li class="mob-menu__item scrollto"><a href="#contacts" data-menu-close class="mob-menu__link">Contacts</a></li>
-            </ul>
-
-            <button type="button" class="mob-menu__btn-consultation">consultation by phone</button>
-        </div>
+      <button type="button" class="mob-menu__btn-consultation">consultation by phone</button>
     </div>
+  </div>
 </header>
