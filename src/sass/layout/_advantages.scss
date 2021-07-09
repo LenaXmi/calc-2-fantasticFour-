@@ -1,7 +1,4 @@
 .advantages {
-  //   @media screen and(max-width:480px) {
-  //     width: 480px;
-  //   }
   padding-top: 30px;
   padding-bottom: 44px;
 
@@ -13,7 +10,8 @@
   &__list {
     @media screen and(min-width:768px) {
       display: flex;
-      align-items: baseline;
+    }
+    @media screen and(min-width:768px) and(max-width:1365px) {
       justify-content: center;
     }
   }
@@ -22,16 +20,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 25px;
 
-    // @media screen and(min-width:768px) {
-    //   flex-basis: calc((100% - 75px) / 3);
-    // }
+    @media screen and(max-width:767px) {
+      margin-bottom: 25px;
+    }
+    @media screen and(min-width:768px) and(max-width:1365px) {
+      margin-right: 21px;
+    }
+
     &-second {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 25px;
+
+      @media screen and(max-width:767px) {
+        margin-bottom: 25px;
+      }
+      @media screen and(min-width:768px) {
+        margin-right: 21px;
+      }
     }
     &-third {
       display: flex;
@@ -39,15 +46,6 @@
       align-items: center;
     }
   }
-
-  // &__item:not(:last-child) {
-  //   @media screen and(max-width:767px) {
-  //     margin-bottom: 25px;
-  //   }
-  //   @media screen and(min-width:768px) {
-  //     margin-right: 21px;
-  //   }
-  // }
 
   &__item::before {
     display: block;
@@ -57,9 +55,6 @@
 
     margin-right: 10px;
 
-    @media screen and(min-width:768px) {
-      margin-right: 21px;
-    }
     @media screen and(min-width:1366px) {
       width: 100px;
       height: 102px;
@@ -79,9 +74,6 @@
     height: 60px;
     margin-right: 10px;
 
-    @media screen and(min-width:768px) {
-      margin-right: 21px;
-    }
     @media screen and(min-width:1366px) {
       width: 100px;
       height: 102px;
@@ -111,17 +103,12 @@
   }
 
   &__description {
-    // @media screen and(min-width:1366px) {
-    //   width: 366px;
-    // }
-    position: relative;
     @media screen and(min-width:1366px) {
       width: 366px;
-      margin-left: -40px;
+      padding-right: 80px;
+      margin-left: -30px;
+      font-size: 20px;
     }
-    width: 139px;
-
-    word-wrap: inherit;
 
     color: $boldTextColor;
     font-weight: bold;
@@ -129,10 +116,30 @@
     line-height: 1.64;
     letter-spacing: 0.08em;
 
-    @media screen and(min-width:1366px) {
-      font-size: 20px;
+    &--width {
+      @media screen and(max-width:1365px) {
+        width: 139px;
+      }
     }
   }
+
+  // &__description-second {
+  //   width: 139px;
+  //   color: $boldTextColor;
+  //   font-weight: bold;
+  //   font-size: 14px;
+  //   line-height: 1.64;
+  //   letter-spacing: 0.08em;
+  // }
+
+  // &__description-third {
+  //   width: 139px;
+  //   color: $boldTextColor;
+  //   font-weight: bold;
+  //   font-size: 14px;
+  //   line-height: 1.64;
+  //   letter-spacing: 0.08em;
+  // }
 }
 
 // .advantages {
