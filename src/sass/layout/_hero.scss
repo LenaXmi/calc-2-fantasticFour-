@@ -7,21 +7,24 @@
   background-image: url(../images/hero/vector-mobile.png);
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 320px 470px;
+  background-size: contain;
   // @media screen and(min-width:768px) {
   //   padding-top: 88px;
   // }
+  @media screen and (max-width: 767px) {
+    padding-bottom: 0;
+  }
 
   @media screen and(min-width:768px) {
     padding-top: 90px;
   }
 
   &__container {
-    min-height: 468px;
+    min-height: 520px;
     background-image: url(../images/hero/hero-mobile.png);
     background-repeat: no-repeat;
-    background-position: right 50% bottom, bottom;
-    background-size: 208px 178px, 320px 470px;
+    background-position: right 50% bottom 85px;
+    background-size: 208px 178px;
 
     @media screen and (min-width: 480px) {
       width: 480px;
@@ -29,6 +32,7 @@
 
     @media screen and(min-width:768px) {
       width: 768px;
+      min-height: 375px;
     }
 
     @media screen and(min-width:1366px) {
@@ -101,11 +105,13 @@
     @media screen and (min-width: 300px) {
       min-width: 260px;
     }
-
+    @media screen and (max-width: 299px) {
+      margin-top: 30px;
+    }
     display: block;
     min-width: 100%;
     min-height: 48px;
-    padding: 14px 2px;
+
     margin-left: auto;
     margin-right: auto;
     margin-top: 52px;
@@ -121,11 +127,15 @@
     background-color: $accentTextColor;
     border: none;
 
-    transition: color 255ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 255ms cubic-bezier(0.4, 0, 0.2, 1),
+      backgroun-color 255ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:focus,
-    &hover {
-      color: $accentTextColor;
+    &:hover {
+      .hero__btn-link {
+        color: $accentTextColor;
+      }
+
       background-color: white;
       border: 2px solid $accentTextColor;
     }
@@ -143,6 +153,11 @@
 
       letter-spacing: 0.14em;
     }
+  }
+  &__btn-link {
+    color: $mainBackgroundColor;
+    padding: 14px 2px;
+    transition: color $animation;
   }
 }
 
@@ -191,8 +206,10 @@
   (min-resolution: 2dppx) and (max-width: 767px) {
   .hero__container {
     background-image: url('../images/hero/hero-mobile@2x.png');
+    background-position: right 50% bottom 85px;
+    min-height: 520px;
     background-size: 208px 178px;
-    background-position: right 50% bottom;
+    padding-bottom: 0;
   }
 }
 //сраная волна для девайсов
@@ -242,7 +259,7 @@
   (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
     background-image: url('../images/hero/vector-mobile@2x.png');
-    background-size: 320px 470px;
+    background-size: contain;
     background-position: bottom;
   }
 }

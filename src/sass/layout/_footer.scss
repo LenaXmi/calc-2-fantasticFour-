@@ -21,7 +21,7 @@
   color: $boldTextColor;
   padding-right: 15px;
 
-  border-right: 1px solid #b9b9b9;
+  border-right: 1px solid $mainTextColor;
   transition: color $animation;
 
   &:hover,
@@ -29,7 +29,7 @@
     color: $accentTextColor;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     border: none;
     margin-bottom: 30px;
   }
@@ -53,7 +53,8 @@
 .contact-number {
   display: flex;
   align-items: center;
-  @media screen and (max-width: 768px) {
+
+  @media screen and (max-width: 767px) {
     flex-direction: column;
   }
 }
@@ -64,7 +65,7 @@
   width: 905px;
   padding: 55px 0;
 
-  @media screen and (max-width: 1360px) {
+  @media screen and (max-width: 1365px) {
     width: auto;
   }
 
@@ -79,6 +80,7 @@
   width: 20px;
   height: 20px;
   margin-right: 10px;
+
   @media screen and (min-width: 768px) {
     width: 24px;
     height: 24px;
@@ -89,12 +91,79 @@
   }
 }
 
-.footer-one__icon-inst {
-  background-image: url(../images/instagram.svg);
-  display: inline-block;
+.footer-one__link-inst {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
+  border-radius: 11px;
+  background-image: radial-gradient(
+      110.28% 110.28% at 20.5% 87.39%,
+      #fae100 0%,
+      #fadc04 5.44%,
+      #fbce0e 11.67%,
+      #fcb720 18.29%,
+      #fe9838 25.14%,
+      #ff7950 30.54%,
+      #ff1c74 49.22%,
+      #6c1cd1 100%
+    ),
+    linear-gradient(
+      299.36deg,
+      rgba(161, 181, 216, 0) 61.06%,
+      rgba(144, 162, 189, 0.309804) 110.82%,
+      rgba(124, 139, 156, 0.756863) 182.56%,
+      #748290 221.9%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(250, 225, 0, 0) 41.26%,
+      rgba(252, 168, 0, 0.305882) 65.21%,
+      rgba(254, 115, 0, 0.627451) 90.26%,
+      rgba(255, 82, 0, 0.866667) 109.08%,
+      #ff4500 119.35%
+    ),
+    linear-gradient(314.85deg, rgba(131, 58, 180, 0) 68.66%, #833ab4 99.14%),
+    linear-gradient(348.01deg, rgba(131, 58, 180, 0) 16.68%, #833ab4 83.38%),
+    linear-gradient(315deg, rgba(131, 58, 180, 0) 39.5%, #833ab4 115.97%),
+    linear-gradient(318.52deg, rgba(131, 58, 180, 0) 64.74%, #833ab4 106.74%),
+    linear-gradient(
+      225.4deg,
+      #833ab4 18.3%,
+      #9c3495 24.28%,
+      #dc2546 37.27%,
+      #fd1d1d 43.71%,
+      #fc6831 54.52%,
+      #fc9b40 62.93%,
+      #fcaf45 67.04%,
+      #fdb750 68.89%,
+      #fecb6a 74.4%,
+      #ffd87a 79.32%,
+      #ffdc80 83.11%
+    );
+
+  transition: background-image $animation;
+
+  &:hover,
+  &:focus {
+    background-image: none;
+  }
+
+  &:hover .footer-one__icon-inst,
+  &:focus .footer-one__icon-inst {
+    color: $accentTextColor;
+    transform: scale(1.5, 1.5);
+    transition: color $animation, transform $animation;
+  }
+
   @media screen and (min-width: 768px) {
     margin-left: 30px;
   }
+}
+
+.footer-one__icon-inst {
+  width: 25px;
+  height: 25px;
+  color: $mainBackgroundColor;
 }

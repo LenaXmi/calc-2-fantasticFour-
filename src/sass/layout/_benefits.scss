@@ -1,17 +1,23 @@
 .benefits {
   background-image: linear-gradient(
     to bottom,
-    $boldTextColor 75%,
-    $mainBackgroundColor 25%,
+    $boldTextColor 60%,
+    $mainBackgroundColor 55%,
     $mainBackgroundColor 100%
   );
-  // @media screen and (min-width: 768px) {
-  //   padding-bottom: 39px;
-  // }
-  // @media screen and (min-width: 1366px) {
-  //   padding-bottom: 130px;
-  // }
-  // padding-bottom: 39px;
+
+  padding-bottom: 39px;
+
+  @media screen and (min-width: 1366px) {
+    padding-bottom: 125px;
+
+    background-image: linear-gradient(
+      to bottom,
+      $boldTextColor 50%,
+      $mainBackgroundColor 45%,
+      $mainBackgroundColor 100%
+    );
+  }
 
   &__title {
     margin-bottom: 30px;
