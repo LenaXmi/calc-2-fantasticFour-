@@ -54,18 +54,21 @@
     align-items: center;
 
     cursor: pointer;
-    border: 1px solid getColor('btn-border');
+    color: getColor('accent');
+    border: 1px solid getColor('accent');
     border-radius: 50%;
     background-color: getColor('background');
     outline-color: getColor('accent');
 
-    transition: color $animation, background-color $animation, border $animation;
+    transition: color $animation, background-color $animation, border $animation,
+      transform $animation;
 
     &:hover,
     &:focus {
       background-color: getColor('accent');
       color: getColor('background');
-      border: none;
+      border-color: transparent;
+      transform: rotate(180deg);
     }
   }
 
@@ -102,6 +105,21 @@
 
     &:focus-within .modal__icon {
       color: getColor('accent');
+      transform: scale(1.4) translateY(65%);
+    }
+
+    &:focus-within .modal__label {
+      color: getColor('accent');
+      font-size: 14px;
+      line-height: 1.17;
+      letter-spacing: 0.03em;
+    }
+
+    &:focus-within textarea::placeholder {
+      color: getColor('accent');
+      font-size: 14px;
+      line-height: 1.17;
+      letter-spacing: 0.03em;
     }
   }
 
@@ -111,6 +129,9 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
+
+    transition: color $animation, font-size $animation, line-height $animation,
+      letter-spacing $animation;
   }
 
   &__input {
@@ -126,6 +147,8 @@
     left: 15px;
     bottom: 50%;
     transform: translateY(100%);
+
+    transition: transform $animation, color $animation;
   }
 
   &__field--comment {
@@ -135,13 +158,16 @@
       border: 1px solid getColor('field-border');
       border-radius: 4px;
       outline-color: getColor('accent');
-    }
-    &::placeholder {
-      font-size: 12px;
-      line-height: 1.17;
-      letter-spacing: 0.01em;
+      color: getColor('accent');
 
-      color: getColor('placeholder');
+      &::placeholder {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+
+        transition: color $animation, font-size $animation, line-height $animation,
+          letter-spacing $animation;
+      }
     }
   }
 
@@ -162,13 +188,15 @@
 
     color: getColor('accent');
     background-color: getColor('background');
-    transition: background-color $animation, color $animation, border-color $animation;
+    transition: background-color $animation, color $animation, border-color $animation,
+      letter-spacing $animation;
 
     &:hover,
     &:focus {
       background-color: getColor('accent');
       color: getColor('background');
       border-color: transparent;
+      letter-spacing: 0.2em;
     }
   }
 }
