@@ -55,7 +55,7 @@
   }
 
   &__title {
-    margin-bottom: 8px;
+    margin-bottom: 65px;
 
     font-weight: 800;
     font-size: 20px;
@@ -67,10 +67,12 @@
 
     @media screen and (min-width: 768px) and (max-width: 1365px) {
       width: 332px;
+      margin-bottom: 102px;
       font-size: 26px;
     }
 
     @media screen and (min-width: 1366px) {
+      margin-bottom: 122px;
       font-size: 58px;
     }
   }
