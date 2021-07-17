@@ -35,10 +35,12 @@
     height: 280px;
     padding-top: 30px;
     padding-bottom: 22px;
+
     border: 1px;
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
-    background: $mainBackgroundColor;
-    transition: background $animation;
+    border-radius: 4px;
+    background-color: $mainBackgroundColor;
+    transition: background-color $animation;
     @media screen and (min-width: 1366px) {
       padding: 40px 30px 55px 30px;
     }
@@ -48,7 +50,7 @@
     }
     &:hover,
     &:focus {
-      background: $accentTextColor;
+      background-color: $accentTextColor;
     }
 
     &:hover .how-we-do-list__icon,
@@ -81,35 +83,39 @@
     color: $boldTextColor;
     position: relative;
     height: 90px;
+    transition: color $animation;
 
     &::after {
       content: '';
       position: absolute;
       top: 70px;
+      left: 50%;
       display: flex;
       width: 20px;
       height: 2px;
       background-color: $accentTextColor;
+      transition: background-color $animation;
 
-      left: 50%;
       transform: translateX(-40%);
     }
   }
 
   &__text {
+    padding-left: 11px;
+    padding-right: 11px;
+
     font-weight: 500;
     font-size: 12px;
     line-height: 1.67;
     text-align: center;
     letter-spacing: 0.08em;
     color: $mainTextColor;
-
-    padding-left: 11px;
-    padding-right: 11px;
+    transition: color $animation;
   }
 
   &__icon {
     color: $accentTextColor;
+    transition: color $animation;
   }
 }
 

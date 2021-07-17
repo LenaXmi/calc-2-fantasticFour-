@@ -10,32 +10,30 @@
       <span class="contacts__title--color">free lesson</span>.
     </p>
     <p class="contacts__text">A consultant will contact you and answer your questions</p>
+
     <form class="contacts-form">
       <div class="contacts-form__wrapper">
-        <div class="contacts-form__item--flex">
-          <label>
-            <input
-              type="text"
-              name="username"
-              class="contacts-form__input colortext"
-              placeholder="Name*"
-            />
+
+        <div class="contacts-form__field" data-aos="zoom-in" data-aos-duration="800">
+          <input id="input__name" class="contacts-form__input" name="user-name" type="text" placeholder="Name*" required minlength="2"/>
+          <label for="input__name" class="contacts-form__label" data-content="Name*" Foreground="White">
+            <span class="visually-hidden">Name*</span>
           </label>
         </div>
-        <div class="contacts-form__item--flex">
-          <label>
-            <input
-              type="tel"
-              name="number"
-              class="contacts-form__input colortext"
-              placeholder="Phone*"
-            />
+        
+        <div class="contacts-form__field" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+          <input id="input__phone" class="contacts-form__input" name="user-phone" type="tel" placeholder="Phone*" required 
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="096-111-11-11"/>
+          <label for="input__phone" class="contacts-form__label" data-content="Phone*" Foreground="White">
+            <span class="visually-hidden">Phone*</span>
           </label>
         </div>
-        <div class="contacts-form__item--flex">
-          <button type="submit" class="contacts-form__button">i want a free lesson</button>
-        </div>
+
+        <button type="submit" class="contacts-form__button" data-aos="zoom-in-down" data-aos-duration="800"
+          data-aos-delay="100">i want a free lesson
+        </button>
       </div>
     </form>
+    
   </div>
 </section>
