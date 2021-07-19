@@ -83,6 +83,11 @@
       justify-content: center;
       color: $accentTextColor;
       user-select: none;
+      padding: 0;
+      border: none;
+      font: inherit;
+      color: inherit;
+      background-color: transparent;
       &:hover,
       &:focus {
         color: #fff;
