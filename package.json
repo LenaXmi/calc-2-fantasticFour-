@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://LenaXmi.github.io/calc-2-fantasticFour-",
+  "homepage": "https://LenaXmi.github.io/html-css-team-project",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /calc-2-fantasticFour-/"
+    "build": "parcel build src/*.html --public-url /html-css-team-project/"
   },
   "repository": {
     "type": "git",
