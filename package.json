@@ -6,7 +6,7 @@
   "homepage": "https://LenaXmi.github.io/html-css-team-project",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /html-css-team-project/"
+    "build": "parcel build src/*.html --public-url /html-css-team-project"
   },
   "repository": {
     "type": "git",
